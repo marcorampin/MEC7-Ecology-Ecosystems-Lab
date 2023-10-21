@@ -1,0 +1,80 @@
+/*elements*/
+html
+{
+    font-family: sans-serif;
+    width: 100%;
+    --maxHeight: 100vh;
+}
+
+body
+{
+	width: 85%;
+	margin: auto;
+}
+
+/*id*/
+#title-page
+{
+	height:calc(var(--maxHeight) - 10px);
+	display: grid;
+	grid-template-rows: 1fr 1.5fr 1fr;
+	align-items: center;
+	
+	background-color: #0162a6;
+	color: white;
+	border-radius: 25px;
+	margin: 5px 0px 5px 0px;
+	
+}
+
+#uni-logo
+{
+	grid-row: 1;
+	max-height: 25vh;
+	justify-self: start;
+}
+
+#main-title
+{
+	grid-row: 2;
+	text-align: center;
+	font-size: max(25px, 3vw);
+	padding: 0px 5px;
+}
+
+#authors
+{
+	grid-row: 3;
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	font-size: max(16px, 1.5vw);
+}
+
+#student
+{
+	padding: 10px;
+}
+
+#supervisors
+{
+	padding: 10px;
+}
+
+
+/* Classes */
+.personal-title
+{
+	font-size: 0.8em;
+}
+
+.grid
+{
+	display: grid;
+}
+
+.max-width
+{
+	max-width: 100%;
+}
